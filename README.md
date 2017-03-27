@@ -11,6 +11,8 @@ rails s
 
 ## Schema
 
+Each Stock has `name` and `symbol` attributes.
+
 ```rb
 ActiveRecord::Schema.define(version: 20170326150322) do
   enable_extension "plpgsql"
