@@ -1,24 +1,24 @@
-# README
+# React Router Lab API
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Install
 
-Things you may want to cover:
+```bash
+git clone git@github.com:ga-wdi-exercises/react-router-lab-api.git
+cd react-router-lab-api
+rails db:create db:migrate db:seed
+rails
+```
 
-* Ruby version
+## Schema
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```rb
+ActiveRecord::Schema.define(version: 20170326150322) do
+  enable_extension "plpgsql"
+  create_table "stocks", force: :cascade do |t|
+    t.string   "name"
+    t.string   "symbol"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+end
+```
