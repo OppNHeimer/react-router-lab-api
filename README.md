@@ -6,7 +6,7 @@
 git clone git@github.com:ga-wdi-exercises/react-router-lab-api.git
 cd react-router-lab-api
 rails db:create db:migrate db:seed
-rails
+rails s
 ```
 
 ## Schema
