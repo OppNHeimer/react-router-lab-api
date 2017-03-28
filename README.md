@@ -5,6 +5,7 @@
 ```bash
 git clone git@github.com:ga-wdi-exercises/react-router-lab-api.git
 cd react-router-lab-api
+bundle install
 rails db:create db:migrate db:seed
 rails s
 ```
